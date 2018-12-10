@@ -1,4 +1,4 @@
-package bandeau;
+package bandeau; //coucou
 
 import javax.swing.*;
 import java.awt.*;
