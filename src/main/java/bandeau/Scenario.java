@@ -20,7 +20,7 @@ public class Scenario {
     public void scenario(){
        new TextColor("dgdgs").launchEffect(myBandeau);
        new Zoom("dgdgs").launchEffect(myBandeau);
-       //new TextRotation().launchEffect(myScenario);
+       new TextRotation("dgdgs").launchEffect(myBandeau);
     }
     
 }
