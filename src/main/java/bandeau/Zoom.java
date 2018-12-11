@@ -4,7 +4,9 @@ import java.awt.Font;
 
 public class Zoom extends Effect {
     
-     public Zoom(){ }
+     public Zoom(){ 
+     super();
+             }
      
      public void launchEffect(Bandeau myBandeau){
                 for (int i = 5; i < 60 ; i+=5) {
