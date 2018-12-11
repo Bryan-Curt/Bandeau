@@ -10,7 +10,7 @@ package bandeau;
  * @author bcurt
  */
 public class Scenario {
-    private final Bandeau myScenario = new Bandeau();
+    private final Bandeau myBandeau = new Bandeau();
     
     public static void main(String[] args) {
 	    new Scenario().scenario();
@@ -18,9 +18,9 @@ public class Scenario {
     
     
     public void scenario(){
-       new TextColor("dgdgs").launchEffect(myScenario);
-       new Zoom().launchEffect(myScenario);
-       new TextRotation().launchEffect(myScenario);
+       new TextColor("dgdgs").launchEffect(myBandeau);
+       new Zoom("dgdgs").launchEffect(myBandeau);
+       //new TextRotation().launchEffect(myScenario);
     }
     
 }
