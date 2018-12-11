@@ -18,9 +18,8 @@ public class Scenario {
     
     
     public void scenario(){
-       new TextColor("yigiug").launchEffect(myScenario);
+       new TextColor("dgdgs").launchEffect(myScenario);
        new Zoom().launchEffect(myScenario);
-      
     }
     
 }
