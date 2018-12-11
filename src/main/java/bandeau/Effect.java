@@ -9,18 +9,12 @@ package bandeau;
  *
  * @author bcurt
  */
-public class TextColor extends Effect{
+public abstract class Effect {
     
-
+    protected String message;
     
-    public TextColor(String text){
-        super();
-        message=text;
- 
+    public Effect(){
+        this.message=message;
     }
     
-    public void launchEffect(Bandeau myBandeau){
-        myBandeau.setMessage(message);
- 
-    }
 }
