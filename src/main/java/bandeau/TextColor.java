@@ -10,15 +10,17 @@ package bandeau;
  * @author bcurt
  */
 public class TextColor extends Effect{
-    private String text;
+    
+
     
     public TextColor(String text){
         super();
-        this.text=text;
+        message=text;
+ 
     }
     
     public void launchEffect(Bandeau myBandeau){
-        myBandeau.setMessage("Hello");
+        myBandeau.setMessage(message);
  
     }
 }
