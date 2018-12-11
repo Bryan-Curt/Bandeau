@@ -16,8 +16,12 @@ public class Scenario {
 	    new Scenario().scenario();
     }
     
+    
     public void scenario(){
-        
+       new TextColor("yigiug").launchEffect(myScenario);
+      
     }
     
+    
 }
+
