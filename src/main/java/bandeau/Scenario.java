@@ -18,9 +18,10 @@ public class Scenario {
     
     
     public void scenario(){
-       new TextColor("dgdgs").launchEffect(myBandeau);
-       new Zoom("dgdgs").launchEffect(myBandeau);
-       new TextRotation("dgdgs").launchEffect(myBandeau);
+       String text="Oui";
+       new TextColor(text).launchEffect(myBandeau);
+       new Zoom(text).launchEffect(myBandeau);
+       new TextRotation(text).launchEffect(myBandeau);
     }
     
 }
