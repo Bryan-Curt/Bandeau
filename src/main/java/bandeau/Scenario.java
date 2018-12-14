@@ -22,10 +22,11 @@ public class Scenario {
     public void scenario() throws InterruptedException{
        String text="Oui";
        new Rainbow(text).launchEffect(myBandeau);
-       new BackgroundColor(text).launchEffect(myBandeau);
-       new TextColor(text).launchEffect(Color.YELLOW,myBandeau);
-       new Zoom(text).launchEffect(myBandeau);
-       new TextRotation(text).launchEffect(myBandeau);
+       String text2="Les couleurs de McDonald's !";
+       new BackgroundColor(text2).launchEffect(myBandeau);
+       new TextColor(text2).launchEffect(Color.YELLOW,myBandeau);
+       new Zoom(text2).launchEffect(myBandeau);
+       new TextRotation(text2).launchEffect(myBandeau);
     }
     
 }
