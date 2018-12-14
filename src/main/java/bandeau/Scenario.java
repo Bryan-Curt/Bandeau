@@ -12,13 +12,14 @@ package bandeau;
 public class Scenario {
     private final Bandeau myBandeau = new Bandeau();
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 	    new Scenario().scenario();
     }
     
     
-    public void scenario(){
+    public void scenario() throws InterruptedException{
        String text="Oui";
+       new Rainbow(text).launchEffect(myBandeau);
        new BackgroundColor(text).launchEffect(myBandeau);
        new TextColor(text).launchEffect(myBandeau);
        new Zoom(text).launchEffect(myBandeau);
