@@ -2,6 +2,7 @@
 package bandeau;
 
 import java.awt.Color;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Rainbow extends Effect {
@@ -12,9 +13,11 @@ public class Rainbow extends Effect {
     
     public void launchEffect(Bandeau myBandeau) throws InterruptedException{
         int i = 0;
-        while (i <= 5){
-        myBandeau.setBackground(Color.RED);
-        TimeUnit.SECONDS.sleep(2);
+        while (i <= 500){
+        Random r = new Random();
+        myBandeau.setBackground(new Color(r.nextInt(255),r.nextInt(255),r.nextInt(255)));
+        myBandeau.sleep(100);        
+        i++;
     }
     myBandeau.setMessage(message);
     }
