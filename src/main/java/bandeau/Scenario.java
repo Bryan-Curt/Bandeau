@@ -21,7 +21,7 @@ public class Scenario {
     
     public void scenario() throws InterruptedException{
        String text="Oui";
-       new Rainbow(text).launchEffect(myBandeau);
+       new Rainbow(text).launchEffect(myBandeau,175);
        String text2="Les couleurs de McDonald's !";
        new BackgroundColor(text2).launchEffect(myBandeau);
        new TextColor(text2).launchEffect(Color.YELLOW,myBandeau);
