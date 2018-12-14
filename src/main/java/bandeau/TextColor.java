@@ -5,6 +5,8 @@
  */
 package bandeau;
 
+import java.awt.Color;
+
 /**
  *
  * @author bcurt
@@ -19,8 +21,9 @@ public class TextColor extends Effect{
  
     }
     
-    public void launchEffect(Bandeau myBandeau){
+    public void launchEffect(Color color,Bandeau myBandeau){
         myBandeau.setMessage(message);
+        myBandeau.setForeground(color);
  
     }
 }
