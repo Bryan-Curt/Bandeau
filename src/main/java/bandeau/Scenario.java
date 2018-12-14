@@ -5,6 +5,8 @@
  */
 package bandeau;
 
+import java.awt.Color;
+
 /**
  *
  * @author bcurt
@@ -21,7 +23,7 @@ public class Scenario {
        String text="Oui";
        new Rainbow(text).launchEffect(myBandeau);
        new BackgroundColor(text).launchEffect(myBandeau);
-       new TextColor(text).launchEffect(myBandeau);
+       new TextColor(text).launchEffect(Color.YELLOW,myBandeau);
        new Zoom(text).launchEffect(myBandeau);
        new TextRotation(text).launchEffect(myBandeau);
     }
