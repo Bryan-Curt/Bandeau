@@ -19,6 +19,7 @@ public class Scenario {
     
     public void scenario(){
        String text="Oui";
+       new BackgroundColor(text).launchEffect(myBandeau);
        new TextColor(text).launchEffect(myBandeau);
        new Zoom(text).launchEffect(myBandeau);
        new TextRotation(text).launchEffect(myBandeau);
