@@ -11,14 +11,17 @@ public class Rainbow extends Effect {
         message=text;
     }
     
-    public void launchEffect(Bandeau myBandeau) throws InterruptedException{
+    public void launchEffect(Bandeau myBandeau, int nbSec) throws InterruptedException{
         myBandeau.setMessage(message);
-        int i = 0;
-        while (i <= 25){
+        int i = -1;
+        while (i <= nbSec){
         Random r = new Random();
         myBandeau.setBackground(new Color(r.nextInt(255),r.nextInt(255),r.nextInt(255)));
-        myBandeau.sleep(100);        
-        i++;
+        myBandeau.sleep(175);
+        if(nbSec!=0){
+            i++; 
+        }
+        
     }
     }
 }
