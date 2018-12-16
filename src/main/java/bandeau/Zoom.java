@@ -3,20 +3,26 @@ package bandeau;
 import java.awt.Font;
 
 public class Zoom extends Effect {
-    
-     public Zoom(String text){ 
+    private int fontSize;
+    private int percentZoom;
+    private String font;
+     public Zoom(String text,String font, int fontSize,int percentZoom){ 
      super();
      message=text;
-             }
+     this.font=font;
+     this.fontSize=fontSize;
+     this.percentZoom=percentZoom;
+     }
      
-     public void launchEffect(Bandeau myBandeau){
+     public int launchEffect(Bandeau myBandeau){
                 myBandeau.setMessage(message);
-
-                for (int i = 5; i < 60 ; i+=5) {
-		myBandeau.setFont(new Font(message, Font.ITALIC, 5+i));
+                int count = fontSize;
+            for (int i = fontSize; i < fontSize+fontSize*(percentZoom/100) ; i++) {
+		myBandeau.setFont(new Font(font, Font.PLAIN, fontSize+i));
 		myBandeau.sleep(100);
+                count=i;
                 }
-     
+                return count;
      }
 }
  
